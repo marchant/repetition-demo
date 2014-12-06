@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="vehicle.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            }
+        },
+        "text1": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text1"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.vehicle.make"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="Vehicle">
+        <div class="name" data-montage-id="text1">
+            Toyota 2009
+        </div>
+        <div>
+            KA 096543 to Indiranagar
+        </div>
+        <div>
+            Score 1 | Anand P
+            <div class="right">
+                <a href="http://54.149.37.69:82/#">
+                    <i class="icon icon-small alert"></i>
+                </a>
+                <a href="http://54.149.37.69:82/#">
+                    <i class="icon icon-small averageheart"></i>
+                </a>
+                <a href="http://54.149.37.69:82/#">
+                    <i class="icon icon-small map"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

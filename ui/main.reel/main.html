@@ -2,21 +2,55 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
+    <link href="http://54.149.37.69:82/css/glydel.css" rel="stylesheet">
+    <link href="http://54.149.37.69:82/css/media.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="./Glydel_files/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "repetition1": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition1"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.data"}
+            }
+        },
+        "vehicle1": {
+            "prototype": "ui/vehicle.reel",
+            "properties": {
+                "element": {"#": "vehicle1"}
+            },
+            "bindings": {
+                "vehicle": {"<-": "@repetition1:iteration.object"}
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 881px;">
+            <div class="listing" style="height: 881px; overflow: hidden; width: auto;">
+                <ul data-montage-id="repetition1">
+                    <li class="row">
+                        <div class="col-md-12 detail" data-montage-id="vehicle1">
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
