@@ -14,7 +14,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
-    _data: {
+    data: {
         value: [
             {
                  "make": "Toyota",
@@ -42,13 +42,5 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             }
 
         ]   
-    },
-    data: {
-        get: function() {
-            return this._data;
-        },
-        set: function(value) {
-            this._data = value;
-        }
     }
 });
