@@ -17,10 +17,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     _data: {
         value: [
             {
-            "make": "Toyota",
-            "modelYear": 2009,
-            "licensePlate": "KA09 650543",
-            "destination": "Somewhere"
+                 "make": "Toyota",
+                 "modelYear": 2009,
+                 "licensePlate": "A302 327904",
+                 "destination": "Somewhere"
             },
              {
                  "make": "Honda",
