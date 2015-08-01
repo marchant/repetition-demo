@@ -21,6 +21,16 @@
             "bindings": {
                 "content": {"<-": "@owner.data"}
             }
+        },
+        "text1": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text1"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition1:iteration.object.make"}
+            }
         }
     }
     </script>
@@ -30,7 +40,7 @@
         <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 881px;">
             <div class="listing" style="height: 881px; overflow: hidden; width: auto;">
                 <ul data-montage-id="repetition1">
-                    <li class="row">
+                    <li class="row" data-montage-id="text1">
 
                     </li>
                 </ul>
