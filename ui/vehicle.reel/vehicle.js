@@ -8,7 +8,7 @@ var Component = require("montage/ui/component").Component;
  * @class Vehicle
  * @extends Component
  */
-exports.Vehicle = Component.specialize(/** @lends Vehicle# */ {
+exports.VehicleController = Component.specialize(/** @lends Vehicle# */ {
     constructor: {
         value: function Vehicle() {
             this.super();
