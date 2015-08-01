@@ -12,12 +12,33 @@
             "properties": {
                 "element": {"#": "main"}
             }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"}
+            },
+            "bindings": {
+                "content": {"<-": "@owner.data"}
+            }
+        },
+        "text1": {
+            "prototype": "ui/car.reel",
+            "properties": {
+                "element": {"#": "text1"}
+            },
+            "bindings": {
+                "object": {"<-": "@repetition:iteration.object"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <ul data-montage-id="repetition">
+            <li data-montage-id="text1"></li>
+        </ul>
     </div>
 </body>
 </html>
