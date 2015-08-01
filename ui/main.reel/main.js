@@ -20,25 +20,25 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                  "make": "Toyota",
                  "modelYear": 2009,
                  "licensePlate": "A302 327904",
-                 "make": "Camry"
+                 "model": "Camry"
             },
              {
                  "make": "Honda",
                  "modelYear": 2009,
                  "licensePlate": "B890 650543",
-                 "make": "Civic"
+                 "model": "Civic"
              },
             {
                 "make": "Acura",
                 "modelYear": 2007,
                 "licensePlate": "KA09 753522",
-                "make": "RDX"
+                "model": "RDX"
             },
             {
                 "make": "Nissan",
                 "modelYear": 2009,
                 "licensePlate": "KA09 650543",
-                "make": "Leaf"
+                "model": "Leaf"
             }
 
         ]   
