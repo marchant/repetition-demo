@@ -10,14 +10,21 @@
                 "element": {"#": "owner"}
             }
         },
-        "text": {
+        "make": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
+                "element": {"#": "make"},
                 "value": "Text"
             },
             "bindings": {
                 "value": {"<-": "@owner.object.make"}
+            }
+        },
+        "model": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "model"},
+                "value": "Text"
             }
         }
     }
@@ -25,7 +32,8 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Car">
-        <span data-montage-id="text"></span>
+        <p data-montage-id="model"></p>
+        <span data-montage-id="make"></span>
     </div>
 </body>
 </html>
