@@ -29,14 +29,26 @@
             "bindings": {
                 "value": {"<-": "@owner.object.model"}
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.object.modelYear"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Car">
+        <h2></h2>
         <span data-montage-id="make"></span>
         <p data-montage-id="model"></p>
+        <p data-montage-id="text"></p>
     </div>
 </body>
 </html>
