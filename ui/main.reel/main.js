@@ -39,8 +39,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 "modelYear": 2009,
                 "licensePlate": "KA09 650543",
                 "model": "Leaf"
-            }
+            },
 
+            {
+                "make": "Renault",
+                "modelYear": 2016,
+                "licensePlate": "DA09 650543",
+                "model": "Clio"
+            }        
         ]   
     }
 });
